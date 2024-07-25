@@ -28,7 +28,7 @@ class Saiyajin{
 
 $goku = new Saiyajin("Goku", 100);
 echo $goku->Saludar()."\n";
- $vegueta= new Saiyajin("Vegueta", 150);
-echo $vegueta->Saludar("soy el principe saiyajin ")."\n";
+ $vegeta= new Saiyajin("Vegeta", 150);
+echo $vegeta->Saludar("soy el principe saiyajin ")."\n";
 $gohan= new Saiyajin("Gohan", 250);
 echo $gohan->Saludar("Hola soy ")."\n";

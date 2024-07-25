@@ -2,7 +2,7 @@
 
 class Saiyajin {
 
-    public $nombre = "Vegueta";
+    public $nombre = "Vegeta";
     public $nivelDePelea = 1000;
 
     public function Saludar(){
@@ -15,4 +15,4 @@ class Saiyajin {
 
 }
 $vegueta = new Saiyajin();
-echo $vegueta -> Saludar();
+echo $vegeta -> Saludar();
