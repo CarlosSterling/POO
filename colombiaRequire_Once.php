@@ -18,3 +18,5 @@ echo $Medellin->mostrarinformacion()."\n";
 $Huila = new ComidadTipicas(nombreDepartamento:"Huila", ubicacionDepartamento:"Sur", acentoDepartamento:"Opita", nombreDelPlato:"Asado Huilense", valorDelPlato:30000);
 echo $Huila->comer()."\n";
 
+
+
