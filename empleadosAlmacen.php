@@ -5,8 +5,8 @@ public string $nombre;
 public string $apellido;
 public int $edad;
 public string $cargo;
-public string $email;
-public string $password;
+protected string $email;
+protected string $password;
 
 
     public function __construct(string $nombreEmpleado = '', string $apellidoEmpleado = '', int $edadEmpleado = 0, string $cargoEmpleado = '', string $emailEmpleado='', string $passworEmpleado=''){
