@@ -31,6 +31,12 @@ class Loro extends Animales{
     }
 }
 
+class Mico extends Animales{
+    public function hacerSonido (){
+        echo "Uaaaa Uaaaaa"."\n"; 
+    }
+}
+
 
 //Polimormismo
 
@@ -51,3 +57,6 @@ hacerSonidoAnimal($vaca);
 
 $loro = new Loro();
 hacerSonidoAnimal($loro);
+
+$mico = new Mico();
+hacerSonidoAnimal($mico);
