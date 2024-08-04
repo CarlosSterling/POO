@@ -6,11 +6,11 @@ abstract class Aprendices {
     public string $email;
     public float $promedio;
 
-    public function __construct(string $nombre, int $edad, string $email, float $promedio) {
-        $this->nombre = $nombre;
-        $this->edad = $edad;
-        $this->email = $email;
-        $this->promedio = $promedio;
+    public function __construct(string $nombreAprendiz, int $edadAprendiz, string $emailAprendiz, float $promedioAprendiz) {
+        $this->nombre = $nombreAprendiz;
+        $this->edad = $edadAprendiz;
+        $this->email = $emailAprendiz;
+        $this->promedio = $promedioAprendiz;
     }
 
     abstract public function Aprender();
