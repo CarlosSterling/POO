@@ -1,71 +1,68 @@
 <?php
-class Animales{
-    public function hacerSonido (){
-        echo "Sonido de Animal";
-    }
-
-}
-
-class Perro extends Animales{
-    public function hacerSonido (){
-       echo "Guau Guau"."\n"; 
-
+class Animales
+{
+    public function hacerSonido()
+    {
+        echo "Sonido de Animal" . "\n";
     }
 }
 
-class Gato extends Animales{
-    public function hacerSonido (){
-        echo "Miau Miau"."\n"; 
+class Perro extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Guau Guau" . "\n";
     }
 }
 
-class Vaca extends Animales{
-    public function hacerSonido (){
-        echo "Muuuu Muuuu"."\n"; 
+class Gato extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Miau Miau" . "\n";
     }
 }
 
-class Loro extends Animales{
-    public function hacerSonido (){
-        echo "Ruuuu Ruuuu"."\n"; 
+class Vaca extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Muuuu Muuuu" . "\n";
     }
 }
 
-class Mico extends Animales{
-    public function hacerSonido (){
-        echo "Uaaaa Uaaaaa"."\n"; 
+class Loro extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Ruuuu Ruuuu" . "\n";
     }
 }
 
-class Gallo extends Animales{
-    public function hacerSonido (){
-        echo "Kikiriqui "."\n"; 
+class Mico extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Uaaaa Uaaaaa" . "\n";
     }
 }
 
+class Gallo extends Animales
+{
+    public function hacerSonido()
+    {
+        echo "Kikiriqui " . "\n";
+    }
+}
 
-//Polimormismo
-
-function hacerSonidoAnimal(Animales $animal) {
+// Polimorfismo
+function hacerSonidoAnimal(Animales $animal)
+{
     $animal->hacerSonido();
 }
 
-//instanciar
-
 $perro = new Perro();
-hacerSonidoAnimal($perro);
+echo hacerSonidoAnimal($perro);
 
 $gato = new Gato();
-hacerSonidoAnimal($gato);
-
-$vaca = new Vaca();
-hacerSonidoAnimal($vaca);
-
-$loro = new Loro();
-hacerSonidoAnimal($loro);
-
-$mico = new Mico();
-hacerSonidoAnimal($mico);
-
-$Gallo = new Gallo();
-hacerSonidoAnimal($Gallo);
+echo hacerSonidoAnimal($gato);

@@ -10,7 +10,7 @@ class Saiyajin {
     }
 
     public function NivelDePelea(){
-        return $this -> nombre." Tiene un nivel de pelea de " . $this->niVelDePelea;
+        return $this -> nombre." Tiene un nivel de pelea de " . $this->nivelDePelea;
     }
 
 }
