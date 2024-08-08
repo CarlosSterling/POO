@@ -23,38 +23,6 @@ class Gato extends Animales
     }
 }
 
-class Vaca extends Animales
-{
-    public function hacerSonido()
-    {
-        echo "Muuuu Muuuu" . "\n";
-    }
-}
-
-class Loro extends Animales
-{
-    public function hacerSonido()
-    {
-        echo "Ruuuu Ruuuu" . "\n";
-    }
-}
-
-class Mico extends Animales
-{
-    public function hacerSonido()
-    {
-        echo "Uaaaa Uaaaaa" . "\n";
-    }
-}
-
-class Gallo extends Animales
-{
-    public function hacerSonido()
-    {
-        echo "Kikiriqui " . "\n";
-    }
-}
-
 // Polimorfismo
 function hacerSonidoAnimal(Animales $animal)
 {
