@@ -39,7 +39,7 @@ class Persona {
 $persona = new Persona("Juan", 25);
 
 
-echo $persona->getNombre(). " "; 
+echo $persona->getNombre(); 
 echo $persona->getEdad()."\n";   
 
 

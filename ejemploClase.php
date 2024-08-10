@@ -13,22 +13,21 @@ abstract class animal{
     }
 
 abstract public function emitirSonido();
+abstract public function saludar();
 
 }
 
 class perro extends animal{
 
     public function emitirSonido(){
-        echo "El animal es un ".$this->animal." se llama ".$this->nombre." y es de raza ".$this->raza." y hace Miau Miau"."\n";
+        echo "El animal es un ".$this->animal." se llama ".$this->nombre."\n";
+    }
+
+    public function saludar(){
+        echo "Hola soy un ".$this->animal." me llamo ".$this->nombre." y saludo ".$this->raza." y hace Miau Miau"."\n";
     }
 
 }
-
-$pelusa = new perro("Lolo", "perro", "pincher");
-$pelusa->emitirSonido();
-
-$roky = new perro("roky", "perro", "pastor");
-$roky->emitirSonido();
 
 
 class gato extends animal{
@@ -36,17 +35,43 @@ class gato extends animal{
     public function emitirSonido(){
         echo "El animal es un ".$this->animal." se llama ".$this->nombre." y es de raza ".$this->raza." y hace Miau Miau"."\n";
     }
+
+    public function saludar(){
+        echo "Hola soy un/a ".$this->animal." me llamo ".$this->nombre." y saludo ".$this->raza." y hace Miau Miau"."\n";
+    }
 }
 
-$selene = new gato("Star", "gato","comun");
-$selene->emitirSonido();
 
 class vaca extends animal{
 
     public function emitirSonido(){
             echo "El animal es un ".$this->animal." se llama ".$this->nombre." y es de raza ".$this->raza." y hace Muuuuuuuu"."\n";
         }
+
+        public function saludar(){
+            echo "Hola, soy un/a ".$this->animal." me llamo ".$this->nombre." y saludo Muuuuuu"."\n";
+        }
+    }
+//polimorfismo
+    function emitirSonidoAnimal(animal $animalesEjemplo){
+        $animalesEjemplo->emitirSonido();
     }
 
-    $lola = new vaca("lola", "vaca", "lechera");
-    $lola->emitirSonido();
+    //instanciar objectos de clases concretas 
+
+    $lola = new vaca("lola", "vaca", "lechera" );
+    emitirSonidoAnimal($lola);
+
+    $selene = new gato("Selene", "Gato", "Siames" );
+    emitirSonidoAnimal($selene);
+
+    //Instanciar objectos concretos
+
+    $lola = new vaca("lola", "vaca", "lechera" );
+    echo $lola->saludar();
+
+
+
+
+
+    
