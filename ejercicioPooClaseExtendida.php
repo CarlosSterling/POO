@@ -19,6 +19,6 @@ class EmpleadoMedioTiempo extends Empleado{
     }
 
     public function  mostrarDetalles(){
-        echo "Nombre: ".$this->getNombre(). " Apellido: " . $this->getApellido(). " Salario: ".$this->getSalario(). " Bonificacion: ".$this->calcularBonificacion()."\n";
+        echo "Nombre: ".$this->getNombre() ." ". $this->getApellido(). " Salario: ".$this->getSalario(). " Bonificacion: ".$this->calcularBonificacion()."\n";
     }
 }
