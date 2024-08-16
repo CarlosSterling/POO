@@ -10,19 +10,19 @@ class AprendicesAdso810{
         $this->telefono = $telefono;
     }
 
-    protected function getNombre(){
+    public function getNombre(){
         return $this->nombre;
     }
 
-    protected function setNombre($nombre){
+    public function setNombre($nombre){
         $this->nombre = $nombre;
     }
 
-    protected function getTelefono(){
+    public function getTelefono(){
         return $this->telefono;
     }
 
-    protected function setTelefono($telefono){
+    public function setTelefono($telefono){
         $this->telefono = $telefono;
     }
 }

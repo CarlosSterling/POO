@@ -6,5 +6,6 @@ require_once "requiereEjercicioPOO.php";
 
 function mostrarDetallesEmpleado(Empleado $empleado){
     $empleado->mostrarDetalles();
+    
 
 }
