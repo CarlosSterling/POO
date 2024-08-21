@@ -19,8 +19,7 @@ interface municipioProveniente{
    
 }
 
-class saladoBlanco extends adso810 implements municipioProveniente
-{
+class saladoBlanco extends adso810 implements municipioProveniente{
     public $edad;
 
     public function __construct($nombreAprendiz, $apellidoAprendiz, $municipioAprendiz, $edadAprendiz) {

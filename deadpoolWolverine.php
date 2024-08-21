@@ -114,8 +114,8 @@ function simularBatalla($deadpool, $wolverine) {
 }
 
 
-$vidaDeadpool = 1200;
-$vidaWolverine = 1200;
+$vidaDeadpool = 100;
+$vidaWolverine = 100;
 
 $deadpool = new Deadpool($vidaDeadpool);
 $wolverine = new Wolverine($vidaWolverine);
