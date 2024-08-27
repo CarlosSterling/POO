@@ -1,6 +1,4 @@
 <?php
-
-
 class Personaje {
     protected $nombre;
     protected $vida;
@@ -40,22 +38,18 @@ class Personaje {
         return $this->nombre;
     }
 }
-
-// Clase para Deadpool
 class Deadpool extends Personaje {
     public function __construct($vida) {
-        parent::__construct('Deadpool', $vida, 10, 100, 25);
+        parent::__construct('DeadPool', $vida, 10, 100, 20);
     }
 }
 
-// Clase para Wolverine
 class Wolverine extends Personaje {
     public function __construct($vida) {
-        parent::__construct('Wolverine', $vida, 10, 120, 20);
+        parent::__construct('Wolverine', $vida, 10, 120, 25);
     }
 }
 
-// Función para simular la batalla
 function simularBatalla($deadpool, $wolverine) {
     $turno = 1;
     $atacaDeadpool = true;
@@ -71,7 +65,7 @@ function simularBatalla($deadpool, $wolverine) {
                 echo "{$deadpool->getNombre()} ataca a {$wolverine->getNombre()} y causa $daño puntos de daño.\n";
                 $wolverine->recibirDaño($daño);
 
-                if ($daño == 100) {
+                if ($daño == 80) {
                     echo "{$deadpool->getNombre()} causa daño máximo. {$wolverine->getNombre()} no puede atacar en el siguiente turno.\n";
                     $atacaWolverine = false;
                 } else {
@@ -88,7 +82,7 @@ function simularBatalla($deadpool, $wolverine) {
                 echo "{$wolverine->getNombre()} ataca a {$deadpool->getNombre()} y causa $daño puntos de daño.\n";
                 $deadpool->recibirDaño($daño);
 
-                if ($daño == 120) {
+                if ($daño == 100) {
                     echo "{$wolverine->getNombre()} causa daño máximo. {$deadpool->getNombre()} no puede atacar en el siguiente turno.\n";
                     $atacaDeadpool = false;
                 } else {
@@ -101,7 +95,7 @@ function simularBatalla($deadpool, $wolverine) {
 
         echo "Vida de {$deadpool->getNombre()}: {$deadpool->getVida()}\n";
         echo "Vida de {$wolverine->getNombre()}: {$wolverine->getVida()}\n";
-        echo "---------------------------\n";
+    
 
         $turno++;
     }
@@ -114,8 +108,8 @@ function simularBatalla($deadpool, $wolverine) {
 }
 
 
-$vidaDeadpool = 100;
-$vidaWolverine = 100;
+$vidaDeadpool = intval(readline("ingrese el nivel de vida del Deadpool: "));
+$vidaWolverine = intval(readline("ingrese el nivel de vida del Wolverine: "));
 
 $deadpool = new Deadpool($vidaDeadpool);
 $wolverine = new Wolverine($vidaWolverine);
