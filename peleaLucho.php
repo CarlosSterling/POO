@@ -43,7 +43,7 @@ class Deadpool extends Pelea {
 
     public function regeneracion() {
         if ($this->vida < $this->vidaInicial) {
-            echo "Deadpool se regenera, recuperando $regeneracion puntos de vida. Vida actual: " . $this->vida . "\n";
+            echo "Deadpool se encunetra regenerando. Vida actual: " . $this->vida . "\n";
         }
     }
 
@@ -75,7 +75,7 @@ class Wolvery extends Pelea {
 
     public function regeneracion() {
         if ($this->vida < $this->vidaInicial) {
-            echo "Wolverine se regenera, recuperando $regeneracion puntos de vida. Vida actual: " . $this->vida . "\n";
+            echo "Wolverine encuentra,  Vida actual: " . $this->vida . "\n";
         }
     }
 

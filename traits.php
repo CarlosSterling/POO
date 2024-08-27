@@ -66,3 +66,12 @@ $tutor->responder();
 $Aprendices = new Aprendices("Alaia", "Sterling", 4);
 $Aprendices->saludar();
 $Aprendices->responder();
+
+
+trait nombreTrait{
+    // funcionalidad
+}
+
+
+//En la clase que se desea implementar
+use nombreTrait;
